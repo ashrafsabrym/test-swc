@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "sourceMap": true,
+        "noEmit": true,
+        "noEmitOnError": true,
+        "noImplicitThis": false,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "compileOnSave": false,
+    "exclude": [
+        "node_modules",
+        "wwwroot",
+        "packages"
+    ]
+}
