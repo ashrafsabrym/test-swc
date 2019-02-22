@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _directives_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./directives/directive */ \"./directives/directive.ts\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! angular */ \"angular\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_1__);\n\n\nangular__WEBPACK_IMPORTED_MODULE_1__[\"module\"]('iService.directive', ['ui.select', 'iService.base']).directive('iserviceIdPrefix', _directives_directive__WEBPACK_IMPORTED_MODULE_0__[\"directive\"]);\n\n\n//# sourceURL=webpack:///./directives.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _directives_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./directives/directive */ \"./directives/directive.ts\");\n/* harmony import */ var _directives_directive2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./directives/directive2 */ \"./directives/directive2.ts\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular */ \"angular\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nangular__WEBPACK_IMPORTED_MODULE_2__[\"module\"]('directives', []).directive('directive', _directives_directive__WEBPACK_IMPORTED_MODULE_0__[\"directive\"]).directive('directive2', _directives_directive2__WEBPACK_IMPORTED_MODULE_1__[\"directive2\"]);\n\n\n//# sourceURL=webpack:///./directives.ts?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dir
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DirectiveController\", function() { return DirectiveController; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"directive\", function() { return directive; });\nfunction DirectiveController($scope, $attrs) {\n    this['$scope'] = $scope;\n    this['$attrs'] = $attrs;\n}\nDirectiveController['$inject'] = ['$scope', '$attrs'];\nfunction directive() {\n    return {\n        restrict: 'A',\n        scope: false,\n        controller: DirectiveController\n    };\n}\n\n\n//# sourceURL=webpack:///./directives/directive.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DirectiveController\", function() { return DirectiveController; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"directive\", function() { return directive; });\nfunction DirectiveController($scope, $attrs) {\n    this['$scope'] = $scope;\n    this['$attrs'] = $attrs;\n    this.action = action;\n    function action() {\n    }\n}\nDirectiveController['$inject'] = ['$scope', '$attrs'];\nfunction directive() {\n    return {\n        restrict: 'A',\n        scope: false,\n        controller: DirectiveController\n    };\n}\n\n\n//# sourceURL=webpack:///./directives/directive.ts?");
+
+/***/ }),
+
+/***/ "./directives/directive2.ts":
+/*!**********************************!*\
+  !*** ./directives/directive2.ts ***!
+  \**********************************/
+/*! exports provided: directive2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"directive2\", function() { return directive2; });\nfunction directive2() {\n    return {\n        restrict: 'E',\n        link: function(scope) {\n            var startOperation1 = function startOperation1(operation) {\n                scope.agentOperation = operation;\n            };\n            scope.startOperation = startOperation;\n        }\n    };\n}\n\n\n//# sourceURL=webpack:///./directives/directive2.ts?");
 
 /***/ }),
 

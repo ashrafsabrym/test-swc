@@ -10,11 +10,11 @@
     "author": "ashrafsabrym",
     "license": "Public domain",
     "devDependencies": {
-        "@swc/cli": "^0.1.12",
-        "@swc/core": "^1.0.19",
+        "@swc/cli": "^0.1.14",
+        "@swc/core": "^1.0.25",
         "@types/angular": "^1.6.54",
         "swc-loader": "^0.1.4",
-        "typescript": "^3.3.3",
+        "typescript": "^3.3.3333",
         "webpack": "^4.29.3",
         "webpack-cli": "^3.2.3"
     }

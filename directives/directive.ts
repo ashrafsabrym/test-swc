@@ -2,6 +2,10 @@ export function DirectiveController(this: any, $scope: angular.IScope, $attrs: a
 {
     this.$scope = $scope;
     this.$attrs = $attrs;
+    this.action = action;
+
+    function action()
+    {}
 }
 
 DirectiveController.$inject = ['$scope', '$attrs'];
